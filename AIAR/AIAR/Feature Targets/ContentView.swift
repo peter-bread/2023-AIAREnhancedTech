@@ -7,6 +7,7 @@
 import SwiftUI
 import AVKit
 
+/// View to display a video.
 struct VideoPlayerView: UIViewRepresentable {
     
     //video from: https://www.youtube.com/watch?v=RhlQvbvMg-0
@@ -15,10 +16,22 @@ struct VideoPlayerView: UIViewRepresentable {
         let view = UIView()
         let player = AVPlayer(url : Bundle.main.url(forResource:"backgroundVideo1", withExtension: "mov")!)
         
+        // ensure video is muted (the video is alreayd silent, this just makes sure)
+        player.isMuted = true
+        
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = UIScreen.main.bounds
         playerLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(playerLayer)
+        
+        // Configure audio session to not interrupt other audio sources
+        // This means Spotify or Apple Music can continue to play while the app is open
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to configure audio session: \(error)")
+        }
         
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil) { _ in
             player.seek(to: CMTime.zero)
@@ -33,8 +46,11 @@ struct VideoPlayerView: UIViewRepresentable {
 }
 
 
-
 struct ContentView: View {
+    
+    // TODO: add QRCodeService
+    // TODO: add shouldReset
+    
     var body: some View {
         
         return NavigationView{
@@ -71,6 +87,7 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .padding(.top, -145) // Add bottom padding for space
                     
+                    // TODO: This is the Button that needs to be changed
                     NavigationLink(destination: ARACTUAL()) {
                         Text("Go to AR View")
                             .fontWeight(.semibold)
@@ -101,7 +118,6 @@ struct ContentView: View {
                     }
                     .padding(.bottom, 10) // Add bottom padding for space
                     
-                    
                     NavigationLink(destination: InstructionsView()) {
                         Text("Instructions")
                             .fontWeight(.semibold)
@@ -116,10 +132,8 @@ struct ContentView: View {
                             )
                     }
                     .padding(.bottom, 10) // Add bottom padding for space
-                    
                 }
             }
-            
         }
         .navigationBarTitle("Main Page") // Set the title in the navigation bar
     }
