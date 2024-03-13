@@ -18,12 +18,10 @@
 		775970772B619E5E00C501F4 /* DatabaseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775970762B619E5E00C501F4 /* DatabaseDemoTests.swift */; };
 		775970812B619E5E00C501F4 /* DatabaseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775970802B619E5E00C501F4 /* DatabaseDemoUITests.swift */; };
 		775970832B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775970822B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift */; };
-		775970902B619EDA00C501F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7759708F2B619EDA00C501F4 /* GoogleService-Info.plist */; };
-		775970912B619EDA00C501F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7759708F2B619EDA00C501F4 /* GoogleService-Info.plist */; };
-		775970922B619EDA00C501F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7759708F2B619EDA00C501F4 /* GoogleService-Info.plist */; };
 		775970952B619EF700C501F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 775970942B619EF700C501F4 /* FirebaseAnalytics */; };
 		775970972B619EF700C501F4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 775970962B619EF700C501F4 /* FirebaseAnalyticsSwift */; };
 		77CED64E2B729B2C00C98EBE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 77CED64D2B729B2C00C98EBE /* FirebaseStorage */; };
+		77E9B2D22BA25F7C00468DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77E9B2D12BA25F7C00468DAB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +56,7 @@
 		7759707C2B619E5E00C501F4 /* DatabaseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775970802B619E5E00C501F4 /* DatabaseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDemoUITests.swift; sourceTree = "<group>"; };
 		775970822B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7759708F2B619EDA00C501F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77E9B2D12BA25F7C00468DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +111,7 @@
 		775970642B619E5D00C501F4 /* DatabaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7759708F2B619EDA00C501F4 /* GoogleService-Info.plist */,
+				77E9B2D12BA25F7C00468DAB /* GoogleService-Info.plist */,
 				775970652B619E5D00C501F4 /* DatabaseDemoApp.swift */,
 				775970672B619E5D00C501F4 /* ContentView.swift */,
 				774202652B7BA321003B6F62 /* ARViewContainer.swift */,
@@ -272,7 +270,7 @@
 			files = (
 				7759706D2B619E5E00C501F4 /* Preview Assets.xcassets in Resources */,
 				7759706A2B619E5E00C501F4 /* Assets.xcassets in Resources */,
-				775970902B619EDA00C501F4 /* GoogleService-Info.plist in Resources */,
+				77E9B2D22BA25F7C00468DAB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775970912B619EDA00C501F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +285,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775970922B619EDA00C501F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
