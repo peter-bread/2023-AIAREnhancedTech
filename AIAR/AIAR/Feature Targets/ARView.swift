@@ -28,68 +28,68 @@ class AARView: ARView {
     convenience init() {
         self.init(frame: UIScreen.main.bounds)
         
-        subscribeToActionStream()
+//        subscribeToActionStream()
     }
     
     private var cancellables: Set<AnyCancellable> = []
     
-    func subscribeToActionStream() {
-        ARManager.shared
-            .actionStream
-            .sink { [weak self] action in
-                switch action {
-                case .placeBlock(let color):
-                    self?.placeBlock(ofColor: color)
-                    
-                case .removeAllAnchors:
-                    self?.scene.anchors.removeAll()
-                    
-                case .importRc:
-                    self?.importRc()
-                    
-                    
-                case .importDocu:
-                    self?.importDocu()
-                }
-            }
-          .store(in: &cancellables)
-    }
-    
-    
-    
-    func placeBlock(ofColor color: Color) {
-
-              let block = MeshResource.generateBox(size: 1)
-              let material = SimpleMaterial(color: UIColor(color), isMetallic: false)
-              let entity = ModelEntity(mesh: block, materials: [material])
-              
-              let anchor = AnchorEntity(plane: .horizontal)
-              anchor.addChild(entity)
-              
-              scene.addAnchor(anchor)
-          }
-      
-      func placeBlock(at transform: simd_float4x4) {
-              let block = MeshResource.generateBox(size: 0.1)
-              let material = SimpleMaterial(color: .white, isMetallic: true)
-              let entity = ModelEntity(mesh: block, materials: [material])
-              
-              let anchor = AnchorEntity(world: transform)
-              anchor.addChild(entity)
-              scene.addAnchor(anchor)
-          }
-    
-    func importRc(){
-        let Boxanchor = try! Atest.load场景()
-        scene.anchors.append(Boxanchor)
-        
-    }
-    
-    
-    func importDocu(){
-        let Boxanchor = try! GalasaDocument.load场景()
-        scene.anchors.append(Boxanchor)
-    }
+//    func subscribeToActionStream() {
+//        ARManager.shared
+//            .actionStream
+//            .sink { [weak self] action in
+//                switch action {
+//                case .placeBlock(let color):
+//                    self?.placeBlock(ofColor: color)
+//                    
+//                case .removeAllAnchors:
+//                    self?.scene.anchors.removeAll()
+//                    
+//                case .importRc:
+//                    self?.importRc()
+//                    
+//                    
+//                case .importDocu:
+//                    self?.importDocu()
+//                }
+//            }
+//          .store(in: &cancellables)
+//    }
+//    
+//    
+//    
+//    func placeBlock(ofColor color: Color) {
+//
+//              let block = MeshResource.generateBox(size: 1)
+//              let material = SimpleMaterial(color: UIColor(color), isMetallic: false)
+//              let entity = ModelEntity(mesh: block, materials: [material])
+//              
+//              let anchor = AnchorEntity(plane: .horizontal)
+//              anchor.addChild(entity)
+//              
+//              scene.addAnchor(anchor)
+//          }
+//      
+//      func placeBlock(at transform: simd_float4x4) {
+//              let block = MeshResource.generateBox(size: 0.1)
+//              let material = SimpleMaterial(color: .white, isMetallic: true)
+//              let entity = ModelEntity(mesh: block, materials: [material])
+//              
+//              let anchor = AnchorEntity(world: transform)
+//              anchor.addChild(entity)
+//              scene.addAnchor(anchor)
+//          }
+//    
+//    func importRc(){
+//        let Boxanchor = try! Atest.load场景()
+//        scene.anchors.append(Boxanchor)
+//        
+//    }
+//    
+//    
+//    func importDocu(){
+//        let Boxanchor = try! GalasaDocument.load场景()
+//        scene.anchors.append(Boxanchor)
+//    }
 
    /* 
     func setupARSession() {
