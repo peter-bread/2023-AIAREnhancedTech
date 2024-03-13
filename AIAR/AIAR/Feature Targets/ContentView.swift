@@ -16,7 +16,7 @@ struct VideoPlayerView: UIViewRepresentable {
         let view = UIView()
         let player = AVPlayer(url : Bundle.main.url(forResource:"backgroundVideo1", withExtension: "mov")!)
         
-        // ensure video is muted (the video is alreayd silent, this just makes sure)
+        // ensure video is muted (the video is already silent, this just makes sure)
         player.isMuted = true
         
         let playerLayer = AVPlayerLayer(player: player)
