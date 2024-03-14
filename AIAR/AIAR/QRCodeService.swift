@@ -6,6 +6,7 @@
 //
 
 import ARKit
+import OSLog
 
 /// `QRCodeService` is a class that handles downloading QR codes from Firebase Storage for ARKit.
 class QRCodeService: ObservableObject {
@@ -33,6 +34,7 @@ class QRCodeService: ObservableObject {
                 DispatchQueue.main.async {
                     self.referenceImages = images
                 }
+                os_log("QR codes loaded successfully", type: .default)
             } catch {
                 print("Error: \(error)")
             }

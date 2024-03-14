@@ -7,6 +7,7 @@
 
 import FirebaseStorage
 import ARKit
+import OSLog
 
 /// Struct that handles downloading QR codes from Firebase Storage
 ///
@@ -24,6 +25,8 @@ struct QRCodeLoader {
         // Create a reference to Firebase Storage and the "qr" folder
         let storageRef = storage.reference()
         let qrCodeFolderRef = storageRef.child("qr")
+        
+        os_log("qr code folder found", type: .info)
         
         /// List all the files in the "qr" folder
         let qrCodelist = try await qrCodeFolderRef.listAll()
@@ -60,6 +63,8 @@ struct QRCodeLoader {
             referenceImages.insert(referenceImage)
         
         }
+        
+        os_log("QR codes downloaded and extracted successfully", type: .info)
 
         // Return the set of `ARReferenceImage`
         return referenceImages

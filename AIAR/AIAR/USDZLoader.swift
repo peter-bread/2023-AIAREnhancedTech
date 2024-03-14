@@ -14,7 +14,7 @@ struct USDZLoader {
     // Create an instance of Firebase Storage
     let storage = Storage.storage()
     
-    /// Downloads a usdz file from Firebase Storage
+    /// Downloads a usdz file from Firebase Storage. Then stores it in local file system.
     /// - Parameters:
     ///   - path: The path to the file in Firebase Storage
     ///   - completion: A closure that is called when the file has been downloaded
