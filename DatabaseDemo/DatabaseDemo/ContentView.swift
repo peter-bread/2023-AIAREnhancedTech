@@ -18,30 +18,6 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 NavigationLink(destination: { MyARView(referenceImages: qrCodeService.referenceImages, shouldReset: $shouldReset)
-//                    .ignoresSafeArea()
-//                
-//                    // overlays (for now) one button on the ARiew inside ARViewContainer so
-//                    // the user can reset the ARView whenever it stops working.
-//                    .overlay(alignment: .bottom, content: {
-//                        Button(action: {
-//                            self.shouldReset = true
-//                            print("Reset Button Clicked")
-//                        }) {
-//                            VStack {
-//                                Image(systemName: "arrow.counterclockwise")
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .frame(width: 35, height: 35)
-//                                    .rotationEffect(.degrees(-30))
-//                                Text("Reset AR")
-//                            }
-//                            .padding()
-//                            .buttonStyle(.borderedProminent)
-//                            .background(.regularMaterial)
-//                            .cornerRadius(16)
-//                        }
-//                        .padding()
-//                    })
                 }) {
                     Text("Open AR View")
                 }
