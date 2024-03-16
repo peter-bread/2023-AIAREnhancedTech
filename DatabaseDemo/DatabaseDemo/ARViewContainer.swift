@@ -77,8 +77,9 @@ class Coordinator: NSObject, ARSessionDelegate {
             
             /*
              These events change the @Binding and @State Property Wrapper variables in ARViewContainer.
-             Since these variables are reactive, updating them automactically invokes `updateUIView()`,
-             so the logic for actually resetting the ARView and loading the models is in there.
+             Since these variables are reactive, updating them automatically invokes `updateUIView()`,
+             so the ARView is reset and models are loaded in there (although the logic for that is in
+             a wrapper class.
             */
             
             switch action {
