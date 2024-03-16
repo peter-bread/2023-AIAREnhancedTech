@@ -26,7 +26,7 @@ class ARViewWrapper: ObservableObject {
     
     /// Loads a 3D model into the AR scene at the location of the detected QR code image anchor.
     /// - Parameters:
-    ///   - path: The path to the USDZ file containing the 3D model.
+    ///   - path: The path to the `USDZ` file containing the 3D model.
     ///   - imageAnchor: The ARImageAnchor representing the detected QR code image.
     func loadModel(path: String, imageAnchor: ARImageAnchor) {
         
