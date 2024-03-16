@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// A SwiftUI view displaying the title and subtitle of the application.
 struct TitleView: View {
     var body: some View {
         VStack {
