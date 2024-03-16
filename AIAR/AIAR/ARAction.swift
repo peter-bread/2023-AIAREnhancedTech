@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
+import ARKit
 
 enum ARAction {
-    case placeBlock(color: Color)
-    case removeAllAnchors
-    case importRc
-    case importDocu
+    case resetARView
+    case loadModel(path: String, anchor: ARImageAnchor)
 }

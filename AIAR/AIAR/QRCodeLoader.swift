@@ -26,7 +26,7 @@ struct QRCodeLoader {
         let storageRef = storage.reference()
         let qrCodeFolderRef = storageRef.child("qr")
         
-        os_log("qr code folder found", type: .info)
+        os_log("[Firebase Storage] QR Code directory found", type: .info)
         
         /// List all the files in the "qr" folder
         let qrCodelist = try await qrCodeFolderRef.listAll()
@@ -54,11 +54,11 @@ struct QRCodeLoader {
                 throw NSError(domain: "Error extracting data from QR code", code: 2, userInfo: nil)
             }
             
-            print("QR Code Data: \(qrCodeData)")
+            print("QR Code data extracted: \(qrCodeData)")
 
             // Create an `ARReferenceImage` and set the name to the extracted data
             // Add the `ARReferenceImage` to the set of `ARReferenceImage`
-            let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.1) // TODO: change size or make it variable
+            let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.18) // TODO: change size or make it variable
             referenceImage.name = qrCodeData
             referenceImages.insert(referenceImage)
         

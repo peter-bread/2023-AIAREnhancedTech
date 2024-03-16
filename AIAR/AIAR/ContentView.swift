@@ -48,12 +48,20 @@ struct VideoPlayerView: UIViewRepresentable {
 
 struct ContentView: View {
     
-    // TODO: add QRCodeService
-    // TODO: add shouldReset
+    /// An instance of QRCodeService to handle loading QR codes.
+    @StateObject private var qrCodeService = QRCodeService()
+    
+    /// A state variable that determines whether the AR view should be reset.
+    ///
+    /// When this variable is set to true, the AR view is reset.
+    ///
+    /// It should be set back to false after the reset is complete.
+    @State private var shouldReset = false
+    // It is bound to a corresponding variable in `ARViewContainer`.
     
     var body: some View {
         
-        return NavigationView{
+        return NavigationView {
             ZStack {
                 VideoPlayerView()
                     .ignoresSafeArea()
@@ -69,7 +77,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding(.top, -220)
                     
-                    Text("Galasa AR AI")
+                    Text("Galasa AI AR")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .scaleEffect(1.5) // Increase the size by 50%
@@ -87,13 +95,26 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .padding(.top, -145) // Add bottom padding for space
                     
-                    // TODO: This is the Button that needs to be changed
-                    NavigationLink(destination: ARACTUAL()) {
-                        Text("Go to AR View")
-                            .fontWeight(.semibold)
+                    var arViewButtonText: String {
+                        return !qrCodeService.referenceImages.isEmpty ? "Open AR View" : "Fetching QR Codes..."
+                    }
+                    
+                    var fg: Color {
+                        return !qrCodeService.referenceImages.isEmpty ? .black : .gray
+                    }
+                    
+                    var bg: Color {
+                        return !qrCodeService.referenceImages.isEmpty ? .white : .clear
+                    }
+                    
+                    NavigationLink(destination: { ActualARView(referenceImages: qrCodeService.referenceImages, shouldReset: $shouldReset)
+                    }) {
+                        Text(arViewButtonText)
                             .padding()
-                            .background(Color.white)
-                            .foregroundColor(Color.black)
+                            .fontWeight(.semibold)
+                            .buttonStyle(.bordered)
+                            .foregroundColor(fg)
+                            .background(bg)
                             .cornerRadius(8)
                             .shadow(color: Color.black, radius: 3, x: 0, y: 2)
                             .overlay(
@@ -101,9 +122,13 @@ struct ContentView: View {
                                     .stroke(Color.black, lineWidth: 1)
                             )
                     }
-                    .padding(.bottom, 10) // Add bottom padding for space
+                    .padding(.bottom, 10)
+                    .disabled(qrCodeService.referenceImages.isEmpty) // cannot enter ARView until all QR codes have been loaded
+                    // in future, if there are lots of sets of QR codes/models, maybe allows users to download a set of QR codes rather than
+                    // all of them???
                     
-                    NavigationLink(destination: TeamRepresentable()) {
+                    NavigationLink(destination: { TeamRepresentable()
+                    }) {
                         Text("Developer introduction")
                             .fontWeight(.semibold)
                             .padding()
@@ -116,9 +141,10 @@ struct ContentView: View {
                                     .stroke(Color.black, lineWidth: 1)
                             )
                     }
-                    .padding(.bottom, 10) // Add bottom padding for space
+                    .padding(.bottom, 10)
                     
-                    NavigationLink(destination: InstructionsView()) {
+                    NavigationLink(destination: { InstructionsView()
+                    }) {
                         Text("Instructions")
                             .fontWeight(.semibold)
                             .padding()
@@ -131,11 +157,12 @@ struct ContentView: View {
                                     .stroke(Color.black, lineWidth: 1)
                             )
                     }
-                    .padding(.bottom, 10) // Add bottom padding for space
+                    .padding(.bottom, 10)
+
                 }
             }
         }
-        .navigationBarTitle("Main Page") // Set the title in the navigation bar
+        .navigationBarTitle("Main Page")
     }
 }
 

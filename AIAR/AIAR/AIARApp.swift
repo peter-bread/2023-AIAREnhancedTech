@@ -14,7 +14,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // configure Firebase
         FirebaseApp.configure()
-        os_log("firebase configured", type: .info)
+        os_log("Firebase successfully configured", type: .info)
         
         return true
     }

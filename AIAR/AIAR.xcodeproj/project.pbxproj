@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04107E932B9A299800851B43 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04107E922B9A299800851B43 /* Instructions.swift */; };
+		772314062BA5F825002C8CE1 /* ActualARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314052BA5F825002C8CE1 /* ActualARView.swift */; };
+		7723140A2BA5F942002C8CE1 /* ARViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314092BA5F942002C8CE1 /* ARViewWrapper.swift */; };
 		7741CD752BA267570031BAF9 /* TeamRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741CD742BA267570031BAF9 /* TeamRepresentable.swift */; };
 		7741CD7B2BA2734B0031BAF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7A2BA2734B0031BAF9 /* FirebaseAnalytics */; };
 		7741CD7D2BA2734B0031BAF9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7C2BA2734B0031BAF9 /* FirebaseAnalyticsSwift */; };
@@ -19,12 +21,10 @@
 		A71F0C7E2B862B1200FEE1EE /* backgroundVideo1.mov in Resources */ = {isa = PBXBuildFile; fileRef = A71F0C7D2B862B1200FEE1EE /* backgroundVideo1.mov */; };
 		A72EA8802B823B1D00259F9A /* ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EA87F2B823B1D00259F9A /* ModelList.swift */; };
 		A76876EB2B6ADB8F00F95E44 /* AIARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */; };
-		A76876ED2B6ADB8F00F95E44 /* ARACTUAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76876EC2B6ADB8F00F95E44 /* ARACTUAL.swift */; };
 		A76876EF2B6ADB9000F95E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76876EE2B6ADB9000F95E44 /* Assets.xcassets */; };
 		A76876F22B6ADB9000F95E44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76876F12B6ADB9000F95E44 /* Preview Assets.xcassets */; };
 		A76877162B6ADC1700F95E44 /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76877152B6ADC1700F95E44 /* ARAction.swift */; };
 		A76877182B6ADC2A00F95E44 /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76877172B6ADC2900F95E44 /* ARManager.swift */; };
-		A768771A2B6ADC3F00F95E44 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76877192B6ADC3F00F95E44 /* ARView.swift */; };
 		A768771C2B6ADC5E00F95E44 /* ARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768771B2B6ADC5E00F95E44 /* ARViewRepresentable.swift */; };
 		A768771E2B6AE09300F95E44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768771D2B6AE09300F95E44 /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		04107E922B9A299800851B43 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
+		772314052BA5F825002C8CE1 /* ActualARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualARView.swift; sourceTree = "<group>"; };
+		772314092BA5F942002C8CE1 /* ARViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewWrapper.swift; sourceTree = "<group>"; };
 		7741CD742BA267570031BAF9 /* TeamRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepresentable.swift; sourceTree = "<group>"; };
 		7741CD882BA2782C0031BAF9 /* USDZLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZLoader.swift; sourceTree = "<group>"; };
 		7741CD8A2BA278B00031BAF9 /* QRCodeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeLoader.swift; sourceTree = "<group>"; };
@@ -58,12 +60,10 @@
 		A72EA8832B823BA400259F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76876E72B6ADB8F00F95E44 /* AIAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIARApp.swift; sourceTree = "<group>"; };
-		A76876EC2B6ADB8F00F95E44 /* ARACTUAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARACTUAL.swift; sourceTree = "<group>"; };
 		A76876EE2B6ADB9000F95E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76876F12B6ADB9000F95E44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A76877152B6ADC1700F95E44 /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
 		A76877172B6ADC2900F95E44 /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
-		A76877192B6ADC3F00F95E44 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		A768771B2B6ADC5E00F95E44 /* ARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewRepresentable.swift; sourceTree = "<group>"; };
 		A768771D2B6AE09300F95E44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,13 +128,13 @@
 				A72EA8832B823BA400259F9A /* Info.plist */,
 				77A169CB2BA37F5D003A639F /* GoogleService-Info.plist */,
 				A71F0C7D2B862B1200FEE1EE /* backgroundVideo1.mov */,
-				A76876EC2B6ADB8F00F95E44 /* ARACTUAL.swift */,
+				772314052BA5F825002C8CE1 /* ActualARView.swift */,
 				7741CD742BA267570031BAF9 /* TeamRepresentable.swift */,
 				A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */,
 				A76877152B6ADC1700F95E44 /* ARAction.swift */,
 				A76877172B6ADC2900F95E44 /* ARManager.swift */,
-				A76877192B6ADC3F00F95E44 /* ARView.swift */,
 				A768771B2B6ADC5E00F95E44 /* ARViewRepresentable.swift */,
+				772314092BA5F942002C8CE1 /* ARViewWrapper.swift */,
 				A768771D2B6AE09300F95E44 /* ContentView.swift */,
 				A72EA87F2B823B1D00259F9A /* ModelList.swift */,
 				7741CD882BA2782C0031BAF9 /* USDZLoader.swift */,
@@ -307,15 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A768771A2B6ADC3F00F95E44 /* ARView.swift in Sources */,
 				A76877182B6ADC2A00F95E44 /* ARManager.swift in Sources */,
 				7741CD8D2BA279170031BAF9 /* QRCodeService.swift in Sources */,
+				772314062BA5F825002C8CE1 /* ActualARView.swift in Sources */,
 				7741CD8B2BA278B00031BAF9 /* QRCodeLoader.swift in Sources */,
 				A72EA8802B823B1D00259F9A /* ModelList.swift in Sources */,
 				A768771C2B6ADC5E00F95E44 /* ARViewRepresentable.swift in Sources */,
 				04107E932B9A299800851B43 /* Instructions.swift in Sources */,
+				7723140A2BA5F942002C8CE1 /* ARViewWrapper.swift in Sources */,
 				7741CD752BA267570031BAF9 /* TeamRepresentable.swift in Sources */,
-				A76876ED2B6ADB8F00F95E44 /* ARACTUAL.swift in Sources */,
 				A768771E2B6AE09300F95E44 /* ContentView.swift in Sources */,
 				7741CD892BA2782C0031BAF9 /* USDZLoader.swift in Sources */,
 				A76876EB2B6ADB8F00F95E44 /* AIARApp.swift in Sources */,
