@@ -20,6 +20,7 @@
 		775970832B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775970822B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift */; };
 		775970952B619EF700C501F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 775970942B619EF700C501F4 /* FirebaseAnalytics */; };
 		775970972B619EF700C501F4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 775970962B619EF700C501F4 /* FirebaseAnalyticsSwift */; };
+		779ACC332BA52F5F00D73845 /* ARWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ACC322BA52F5F00D73845 /* ARWrapper.swift */; };
 		77A169D02BA3962C003A639F /* MyARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A169CF2BA3962C003A639F /* MyARView.swift */; };
 		77CED64E2B729B2C00C98EBE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 77CED64D2B729B2C00C98EBE /* FirebaseStorage */; };
 		77E9B2D22BA25F7C00468DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77E9B2D12BA25F7C00468DAB /* GoogleService-Info.plist */; };
@@ -57,6 +58,7 @@
 		7759707C2B619E5E00C501F4 /* DatabaseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775970802B619E5E00C501F4 /* DatabaseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDemoUITests.swift; sourceTree = "<group>"; };
 		775970822B619E5E00C501F4 /* DatabaseDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		779ACC322BA52F5F00D73845 /* ARWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWrapper.swift; sourceTree = "<group>"; };
 		77A169CF2BA3962C003A639F /* MyARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyARView.swift; sourceTree = "<group>"; };
 		77E9B2D12BA25F7C00468DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				775970652B619E5D00C501F4 /* DatabaseDemoApp.swift */,
 				775970672B619E5D00C501F4 /* ContentView.swift */,
 				774202652B7BA321003B6F62 /* ARViewContainer.swift */,
+				779ACC322BA52F5F00D73845 /* ARWrapper.swift */,
 				77A169CF2BA3962C003A639F /* MyARView.swift */,
 				7745683D2B7D9CA200B49847 /* USDZLoader.swift */,
 				7735BF902B7E618C00211BC2 /* QRCodeLoader.swift */,
@@ -304,6 +307,7 @@
 				775970682B619E5D00C501F4 /* ContentView.swift in Sources */,
 				775970662B619E5D00C501F4 /* DatabaseDemoApp.swift in Sources */,
 				7735BF932B7E62EF00211BC2 /* QRCodeService.swift in Sources */,
+				779ACC332BA52F5F00D73845 /* ARWrapper.swift in Sources */,
 				77A169D02BA3962C003A639F /* MyARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
