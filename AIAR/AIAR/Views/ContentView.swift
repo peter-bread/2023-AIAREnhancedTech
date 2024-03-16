@@ -127,7 +127,7 @@ struct ContentView: View {
                     // in future, if there are lots of sets of QR codes/models, maybe allows users to download a set of QR codes rather than
                     // all of them???
                     
-                    NavigationLink(destination: { TeamRepresentable()
+                    NavigationLink(destination: { TeamView()
                     }) {
                         Text("Developer introduction")
                             .fontWeight(.semibold)

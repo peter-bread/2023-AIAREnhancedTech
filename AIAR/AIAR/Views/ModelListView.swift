@@ -13,7 +13,7 @@ struct Models {
     let description: String
 }
 
-struct ModelViewRepresentable: View {
+struct ModelListView: View {
     
     @State private var models = [
         Models(name:"Model1",category: "IBM Internal",description: "this is model 1, it is an IBM Internal document"),
@@ -92,7 +92,6 @@ struct AddModelView: View {
     @Binding var models: [Models]
     
     var body: some View {
-//        Text("Add new model view")
         
         VStack{
             Text("Add Model Introduction").font(.largeTitle)
@@ -117,3 +116,6 @@ struct AddModelView: View {
     }
 }
 
+#Preview {
+    ModelListView()
+}

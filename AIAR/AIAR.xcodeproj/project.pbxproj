@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04107E932B9A299800851B43 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04107E922B9A299800851B43 /* Instructions.swift */; };
 		772314062BA5F825002C8CE1 /* ActualARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314052BA5F825002C8CE1 /* ActualARView.swift */; };
 		7723140A2BA5F942002C8CE1 /* ARViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314092BA5F942002C8CE1 /* ARViewWrapper.swift */; };
-		7741CD752BA267570031BAF9 /* TeamRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741CD742BA267570031BAF9 /* TeamRepresentable.swift */; };
 		7741CD7B2BA2734B0031BAF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7A2BA2734B0031BAF9 /* FirebaseAnalytics */; };
 		7741CD7D2BA2734B0031BAF9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7C2BA2734B0031BAF9 /* FirebaseAnalyticsSwift */; };
 		7741CD7F2BA2734B0031BAF9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7E2BA2734B0031BAF9 /* FirebaseStorage */; };
@@ -18,8 +16,10 @@
 		7741CD8B2BA278B00031BAF9 /* QRCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741CD8A2BA278B00031BAF9 /* QRCodeLoader.swift */; };
 		7741CD8D2BA279170031BAF9 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7741CD8C2BA279170031BAF9 /* QRCodeService.swift */; };
 		77A169CC2BA37F5D003A639F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77A169CB2BA37F5D003A639F /* GoogleService-Info.plist */; };
+		77A6D1C02BA60EF8003E14D1 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A6D1BF2BA60EF8003E14D1 /* TeamView.swift */; };
+		77A6D1C52BA60FF5003E14D1 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A6D1C42BA60FF5003E14D1 /* InstructionsView.swift */; };
+		77A6D1C72BA610BA003E14D1 /* ModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A6D1C62BA610BA003E14D1 /* ModelListView.swift */; };
 		A71F0C7E2B862B1200FEE1EE /* backgroundVideo1.mov in Resources */ = {isa = PBXBuildFile; fileRef = A71F0C7D2B862B1200FEE1EE /* backgroundVideo1.mov */; };
-		A72EA8802B823B1D00259F9A /* ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EA87F2B823B1D00259F9A /* ModelList.swift */; };
 		A76876EB2B6ADB8F00F95E44 /* AIARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */; };
 		A76876EF2B6ADB9000F95E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76876EE2B6ADB9000F95E44 /* Assets.xcassets */; };
 		A76876F22B6ADB9000F95E44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76876F12B6ADB9000F95E44 /* Preview Assets.xcassets */; };
@@ -47,16 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04107E922B9A299800851B43 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		772314052BA5F825002C8CE1 /* ActualARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualARView.swift; sourceTree = "<group>"; };
 		772314092BA5F942002C8CE1 /* ARViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewWrapper.swift; sourceTree = "<group>"; };
-		7741CD742BA267570031BAF9 /* TeamRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepresentable.swift; sourceTree = "<group>"; };
 		7741CD882BA2782C0031BAF9 /* USDZLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZLoader.swift; sourceTree = "<group>"; };
 		7741CD8A2BA278B00031BAF9 /* QRCodeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeLoader.swift; sourceTree = "<group>"; };
 		7741CD8C2BA279170031BAF9 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
 		77A169CB2BA37F5D003A639F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77A6D1BF2BA60EF8003E14D1 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		77A6D1C42BA60FF5003E14D1 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		77A6D1C62BA610BA003E14D1 /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
 		A71F0C7D2B862B1200FEE1EE /* backgroundVideo1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = backgroundVideo1.mov; sourceTree = "<group>"; };
-		A72EA87F2B823B1D00259F9A /* ModelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelList.swift; sourceTree = "<group>"; };
 		A72EA8832B823BA400259F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76876E72B6ADB8F00F95E44 /* AIAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIARApp.swift; sourceTree = "<group>"; };
@@ -103,6 +103,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77A6D1BE2BA60EB2003E14D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A768771D2B6AE09300F95E44 /* ContentView.swift */,
+				772314052BA5F825002C8CE1 /* ActualARView.swift */,
+				77A6D1BF2BA60EF8003E14D1 /* TeamView.swift */,
+				77A6D1C42BA60FF5003E14D1 /* InstructionsView.swift */,
+				77A6D1C62BA610BA003E14D1 /* ModelListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77A6D1C12BA60F55003E14D1 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				A768771B2B6ADC5E00F95E44 /* ARViewRepresentable.swift */,
+				772314092BA5F942002C8CE1 /* ARViewWrapper.swift */,
+				A76877172B6ADC2900F95E44 /* ARManager.swift */,
+				A76877152B6ADC1700F95E44 /* ARAction.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		77A6D1C22BA60F7B003E14D1 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				7741CD8C2BA279170031BAF9 /* QRCodeService.swift */,
+				7741CD8A2BA278B00031BAF9 /* QRCodeLoader.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		77A6D1C32BA60F89003E14D1 /* USDZ */ = {
+			isa = PBXGroup;
+			children = (
+				7741CD882BA2782C0031BAF9 /* USDZLoader.swift */,
+			);
+			path = USDZ;
+			sourceTree = "<group>";
+		};
 		A76876DE2B6ADB8F00F95E44 = {
 			isa = PBXGroup;
 			children = (
@@ -125,22 +165,14 @@
 		A76876E92B6ADB8F00F95E44 /* AIAR */ = {
 			isa = PBXGroup;
 			children = (
+				77A6D1C32BA60F89003E14D1 /* USDZ */,
+				77A6D1C22BA60F7B003E14D1 /* QR */,
+				77A6D1C12BA60F55003E14D1 /* AR */,
+				77A6D1BE2BA60EB2003E14D1 /* Views */,
 				A72EA8832B823BA400259F9A /* Info.plist */,
 				77A169CB2BA37F5D003A639F /* GoogleService-Info.plist */,
 				A71F0C7D2B862B1200FEE1EE /* backgroundVideo1.mov */,
 				A76876EA2B6ADB8F00F95E44 /* AIARApp.swift */,
-				A768771D2B6AE09300F95E44 /* ContentView.swift */,
-				772314052BA5F825002C8CE1 /* ActualARView.swift */,
-				A768771B2B6ADC5E00F95E44 /* ARViewRepresentable.swift */,
-				772314092BA5F942002C8CE1 /* ARViewWrapper.swift */,
-				A76877172B6ADC2900F95E44 /* ARManager.swift */,
-				A76877152B6ADC1700F95E44 /* ARAction.swift */,
-				7741CD8C2BA279170031BAF9 /* QRCodeService.swift */,
-				7741CD8A2BA278B00031BAF9 /* QRCodeLoader.swift */,
-				7741CD882BA2782C0031BAF9 /* USDZLoader.swift */,
-				7741CD742BA267570031BAF9 /* TeamRepresentable.swift */,
-				04107E922B9A299800851B43 /* Instructions.swift */,
-				A72EA87F2B823B1D00259F9A /* ModelList.swift */,
 				A76876EE2B6ADB9000F95E44 /* Assets.xcassets */,
 				A76876F02B6ADB9000F95E44 /* Preview Content */,
 			);
@@ -307,17 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A6D1C72BA610BA003E14D1 /* ModelListView.swift in Sources */,
 				A76877182B6ADC2A00F95E44 /* ARManager.swift in Sources */,
 				7741CD8D2BA279170031BAF9 /* QRCodeService.swift in Sources */,
 				772314062BA5F825002C8CE1 /* ActualARView.swift in Sources */,
 				7741CD8B2BA278B00031BAF9 /* QRCodeLoader.swift in Sources */,
-				A72EA8802B823B1D00259F9A /* ModelList.swift in Sources */,
+				77A6D1C02BA60EF8003E14D1 /* TeamView.swift in Sources */,
 				A768771C2B6ADC5E00F95E44 /* ARViewRepresentable.swift in Sources */,
-				04107E932B9A299800851B43 /* Instructions.swift in Sources */,
 				7723140A2BA5F942002C8CE1 /* ARViewWrapper.swift in Sources */,
-				7741CD752BA267570031BAF9 /* TeamRepresentable.swift in Sources */,
 				A768771E2B6AE09300F95E44 /* ContentView.swift in Sources */,
 				7741CD892BA2782C0031BAF9 /* USDZLoader.swift in Sources */,
+				77A6D1C52BA60FF5003E14D1 /* InstructionsView.swift in Sources */,
 				A76876EB2B6ADB8F00F95E44 /* AIARApp.swift in Sources */,
 				A76877162B6ADC1700F95E44 /* ARAction.swift in Sources */,
 			);

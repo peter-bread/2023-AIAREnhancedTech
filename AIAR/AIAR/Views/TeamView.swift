@@ -1,14 +1,14 @@
 //
-//  team.swift
+//  TeamView.swift
 //  AIAR
 //
-//  Created by 陈若鑫 on 31/01/2024.
+//  Created by Peter Sheehan on 16/03/2024.
 //
+
 import SwiftUI
 
-struct TeamRepresentable: View {
+struct TeamView: View {
     var body: some View {
-        
         VStack {
             HStack {
                 Text("Hi, we are the developer team")
@@ -74,7 +74,6 @@ struct TeamRepresentable: View {
     }
 }
 
-
 #Preview {
-    TeamRepresentable()
+    TeamView()
 }
