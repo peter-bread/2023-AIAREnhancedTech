@@ -8,11 +8,19 @@
 
 import SwiftUI
 
+/// A SwiftUI view representing individual developer information, including an image and name.
 private struct DeveloperInfoView: View {
     
+    /// The name of the image representing the developer.
     private let imageName: String
+    
+    /// The name of the developer.
     private let name: String
     
+    /// Initializes a new instance of `DeveloperInfoView`.
+    /// - Parameters:
+    ///   - imageName: The name of the image representing the developer.
+    ///   - name: The name of the developer.
     init(imageName: String, name: String) {
         self.imageName = imageName
         self.name = name
@@ -33,6 +41,7 @@ private struct DeveloperInfoView: View {
     }
 }
 
+/// A SwiftUI view representing the team, displaying information about each team member.
 struct TeamView: View {
     var body: some View {
         VStack {
@@ -45,6 +54,7 @@ struct TeamView: View {
             
             Spacer()
             
+            // Group of `DeveloperInfoView`, each representing an individual team member.
             Group {
                 HStack(spacing: 20) {
                     DeveloperInfoView(imageName: "Louie", name: "Louie Sinadjan")
