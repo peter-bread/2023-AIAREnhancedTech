@@ -96,8 +96,8 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 class Coordinator: NSObject, ARSessionDelegate {
-    var parent: ARViewContainer
-    var actionStreamSubscription: AnyCancellable?
+    private var parent: ARViewContainer
+    private var actionStreamSubscription: AnyCancellable?
 
     init(_ parent: ARViewContainer) {
         
@@ -128,8 +128,7 @@ class Coordinator: NSObject, ARSessionDelegate {
                 let path = imageAnchor.referenceImage.name
             {
                 print("Detected Image: \(path)")
-                self.parent.detectedImageAnchor = imageAnchor
-                self.parent.modelPath = path
+                ARManager.shared.actionStream.send(.loadModel(path: path, anchor: imageAnchor))
             }
         }
     }
