@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// THIS IS NOT BEING USED AT THE MOMENT.
+// IT MAY BE ADDED BACK IN.
+
 struct Models {
     let name: String
     let category: String
