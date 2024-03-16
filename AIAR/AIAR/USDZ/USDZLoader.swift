@@ -8,13 +8,13 @@
 import Foundation
 import FirebaseStorage
 
-// USDZLoader is a struct that handles downloading USDZ files from Firebase Storage.
+// `USDZLoader` is a struct that handles downloading `USDZ` files from Firebase Storage.
 struct USDZLoader {
     
     // Create an instance of Firebase Storage
     let storage = Storage.storage()
     
-    /// Downloads a usdz file from Firebase Storage. Then stores it in local file system.
+    /// Downloads a `USDZ` file from Firebase Storage. Then stores it in local file system.
     /// - Parameters:
     ///   - path: The path to the file in Firebase Storage
     ///   - completion: A closure that is called when the file has been downloaded
@@ -24,7 +24,7 @@ struct USDZLoader {
         let storageRef = storage.reference()
         let usdzRef = storageRef.child("\(path).usdz")
         
-        // Download the data of the usdz file
+        // Download the data of the `USDZ` file
         usdzRef.getData(maxSize: 30 * 1024 * 1024) { data, error in
             if let error = error {
                 print("Error downloading USDZ file: \(error.localizedDescription)")
@@ -50,7 +50,7 @@ struct USDZLoader {
         // Get the URL for the caches directory
         let fileManager = FileManager.default
         let docsURL = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
-        let fileURL = docsURL.appendingPathComponent("downloadedUSDZ.usdz") // maybe use `appending` in future (a...PathCom... will be deprecated)
+        let fileURL = docsURL.appending(path: "downloadedUSDZ.usdz")
         
         // Try to write to the file system
         do {
