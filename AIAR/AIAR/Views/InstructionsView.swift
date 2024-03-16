@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+/// Page for a description of the app and instructions for how to use it.
 struct InstructionsView: View {
     var body: some View {
         VStack {
-            Text("Welcome to Galasa AR AI")
+            Text("Welcome to Galasa AI AR")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)

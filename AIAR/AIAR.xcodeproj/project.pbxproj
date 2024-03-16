@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771C0C8B2BA638D700A7B909 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C0C8A2BA638D700A7B909 /* TitleView.swift */; };
 		772314062BA5F825002C8CE1 /* ActualARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314052BA5F825002C8CE1 /* ActualARView.swift */; };
 		7723140A2BA5F942002C8CE1 /* ARViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772314092BA5F942002C8CE1 /* ARViewWrapper.swift */; };
 		7741CD7B2BA2734B0031BAF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7741CD7A2BA2734B0031BAF9 /* FirebaseAnalytics */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		771C0C8A2BA638D700A7B909 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		772314052BA5F825002C8CE1 /* ActualARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualARView.swift; sourceTree = "<group>"; };
 		772314092BA5F942002C8CE1 /* ARViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewWrapper.swift; sourceTree = "<group>"; };
 		7741CD882BA2782C0031BAF9 /* USDZLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDZLoader.swift; sourceTree = "<group>"; };
@@ -98,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771C0C892BA638B300A7B909 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				A768771D2B6AE09300F95E44 /* ContentView.swift */,
+				771C0C8A2BA638D700A7B909 /* TitleView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
 		7741CD792BA2734B0031BAF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +119,7 @@
 		77A6D1BE2BA60EB2003E14D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A768771D2B6AE09300F95E44 /* ContentView.swift */,
+				771C0C892BA638B300A7B909 /* ContentView */,
 				772314052BA5F825002C8CE1 /* ActualARView.swift */,
 				77A6D1BF2BA60EF8003E14D1 /* TeamView.swift */,
 				77A6D1C42BA60FF5003E14D1 /* InstructionsView.swift */,
@@ -364,6 +375,7 @@
 				77A6D1CA2BA618F5003E14D1 /* VideoPlayerRepresentable.swift in Sources */,
 				A76876EB2B6ADB8F00F95E44 /* AIARApp.swift in Sources */,
 				A76877162B6ADC1700F95E44 /* ARAction.swift in Sources */,
+				771C0C8B2BA638D700A7B909 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

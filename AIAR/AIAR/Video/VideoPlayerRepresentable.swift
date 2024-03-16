@@ -3,12 +3,13 @@
 //  AIAR
 //
 //  Created by Peter Sheehan on 16/03/2024.
+//  (This code was originally written by Zak Mansuri)
 //
 
 import SwiftUI
 import AVKit
 
-/// View to display a video.
+/// Representable to display a video.
 struct VideoPlayerRepresentable: UIViewRepresentable {
     
     //video from: https://www.youtube.com/watch?v=RhlQvbvMg-0
