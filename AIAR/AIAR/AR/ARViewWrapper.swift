@@ -16,9 +16,6 @@ class ARViewWrapper: ObservableObject {
     /// The ARView instance used to display the augmented reality scene.
     let arView: ARView
     
-    /// The detected image anchor used as a reference for placing 3D models in the AR scene.
-    var detectedImageAnchor: ARImageAnchor?
-    
     /// Initialises the ARViewWrapper and creates an ARView instance.
     init() {
         self.arView = ARView(frame: .zero)
