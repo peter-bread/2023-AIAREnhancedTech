@@ -24,35 +24,66 @@ class ARViewWrapper: ObservableObject {
         self.arView = ARView(frame: .zero)
     }
     
+    /// Calculates the rotation quaternion to align the model with the real-world X-axis based on the detected image's anchor.
+    ///
+    /// - Parameter imageAnchor: The ARImageAnchor representing the detected QR code image.
+    /// - Returns: A quaternion representing the rotation around the X-axis to align the model with the real-world X-axis.
+    static func calculateModelRotation(imageAnchor: ARImageAnchor) -> simd_quatf {
+        /// A matrix encoding the position, orientation, and scale of the `ARImageAnchor` relative to
+        /// the world coordinate space of the AR session the anchor is placed in.
+        let imageRotationMatrix = imageAnchor.transform
+        
+        // Rotate model to be vertical regardless of the angle of the reference image
+        /// Rotation angle around the X-axis based on the detected image's anchor.
+        let xRotationAngle = atan2(imageRotationMatrix.columns.2.y, imageRotationMatrix.columns.2.z)
+        
+        /// A quaternion representing the rotation around the X-axis.
+        var xAxisAlignmentQuaternion = simd_quatf(angle: xRotationAngle, axis: [1, 0, 0])
+        
+        // Normalisation of the quaternion to ensure it represents a valid rotation.
+        xAxisAlignmentQuaternion = simd_normalize(xAxisAlignmentQuaternion)
+        
+        return xAxisAlignmentQuaternion
+    }
+    
     /// Loads a 3D model into the AR scene at the location of the detected QR code image anchor.
     /// - Parameters:
     ///   - path: The path to the `USDZ` file containing the 3D model.
     ///   - imageAnchor: The ARImageAnchor representing the detected QR code image.
     func loadModel(path: String, imageAnchor: ARImageAnchor) {
         
-        // Download the usdz file from Firebase Storage
+        // Create an `AnchorEntity` at the location of the detected QR code image
+        let anchorEntity = AnchorEntity(anchor: imageAnchor) // Place the anchor at the origin
+
+        // Download the `USDZ` file from Firebase Storage
         USDZLoader().asyncDownloadUSDZ(from: path) { fileURL in
             DispatchQueue.main.async {
                 do {
-                    // Load the usdz file into an `Entity`
+                    // Load the `USDZ` file into an `Entity`
+                    /// The `ModelEntity` representing the downloaded `USDZ`model.
                     let usdzEntity = try Entity.loadModel(contentsOf: fileURL)
                     
-                    // Create an `AnchorEntity` at the location of the detected QR code image
-                    let anchorEntity = AnchorEntity(anchor: imageAnchor) // Place the anchor at the origin
+                    /// Temporary rotation for making the model face the user.
+                    ///
+                    /// Right now, the only model I have needs to be rotated 90 deg anticlockwise.
+                    ///
+                    /// If all models are like this, it will be ok.
+                    ///
+                    /// If they vary, may need to use Firestore to store rotation data.
+                    let tempRotation = simd_quatf(angle: -1 * .pi / 2, axis: [0, 1, 0])
                     
-                    // temporary rotation (the models I am using do not have built-in anchors so I have to
-                    // orient them manually here)
-                    // if models are not all oriented the same way, I will include the necessary rotation data in the metadata and read that
+                    /// A quaternion representing the rotation around the X-axis to align the model with the real-world X-axis.
+                    ///
+                    /// This is used to ensure that the model
+                    let xAxisAlignmentQuaternion = ARViewWrapper.calculateModelRotation(imageAnchor: imageAnchor)
                     
-                    let rotation1 = simd_quatf(angle: -1 * .pi / 2, axis: [1, 0, 0])
-                    let rotation2 = simd_quatf(angle: -1 * .pi / 2, axis: [0, 1, 0])
+                    // Apply the 2 rotations to the `Entity`
+                    usdzEntity.transform.rotation = xAxisAlignmentQuaternion * tempRotation
                     
-                    let rotation = rotation1 * rotation2
-                    
-                    usdzEntity.transform.rotation = rotation
-
-                    // Add the `Entity` to the `AnchorEntity` and add the `AnchorEntity` to the AR scene
+                    // Add the `Entity` to the `AnchorEntity`
                     anchorEntity.addChild(usdzEntity)
+                    
+                    // add the `AnchorEntity` to the AR scene
                     self.arView.scene.addAnchor(anchorEntity)
                 } catch {
                     print("Error loading USDZ data into RealityKit: \(error.localizedDescription)")
