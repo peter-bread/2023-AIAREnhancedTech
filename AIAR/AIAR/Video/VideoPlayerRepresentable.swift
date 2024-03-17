@@ -9,11 +9,14 @@
 import SwiftUI
 import AVKit
 
-/// Representable to display a video.
+/// A SwiftUI `UIViewRepresentable` to display a video.
 struct VideoPlayerRepresentable: UIViewRepresentable {
     
-    //video from: https://www.youtube.com/watch?v=RhlQvbvMg-0
+    // video from: https://www.youtube.com/watch?v=RhlQvbvMg-0
     
+    /// Creates a `UIView` to display the video player.
+    /// - Parameter context: The context for creating the view.
+    /// - Returns: A `UIView` configured to display the video player.
     func makeUIView(context: Context) -> UIView {
         let view = UIView()
         let player = AVPlayer(url : Bundle.main.url(forResource:"backgroundVideo1", withExtension: "mov")!)
@@ -44,5 +47,9 @@ struct VideoPlayerRepresentable: UIViewRepresentable {
         return view
     }
     
+    /// Updates the view when needed.
+    /// - Parameters:
+    ///   - uiView: The view being updated.
+    ///   - context: The context for updating the view.
     func updateUIView(_ uiView: UIView, context: Context) {}
 }
