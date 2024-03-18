@@ -44,6 +44,8 @@ $(convert "$IS_APPINVITE_ENABLED")
 $(convert "$IS_GCM_ENABLED")
 <key>IS_SIGNIN_ENABLED</key>
 $(convert "$IS_SIGNIN_ENABLED")
+<key>GOOGLE_APP_ID</key>
+<string>$GOOGLE_APP_ID</string>
 </dict>
 </plist>
 EOF
