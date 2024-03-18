@@ -16,6 +16,8 @@ convert() {
 	esac
 }
 
+pwd
+
 # Create and populate GoogleService-Info.plist
 cat <<EOF >GoogleService-Info
 <?xml version="1.0" encoding="UTF-8"?>
