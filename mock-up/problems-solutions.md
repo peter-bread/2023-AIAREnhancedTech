@@ -25,7 +25,7 @@ Because the actual AR scene needs to contain many models as well as many complex
 
 ### Solution
 #### 1. Limited Documentation and Resources：
-According to the official apple documentation, try to incorporate multiple tricks of arkit at the same time.
+According to the official apple documentation, try to incorporate multiple tricks of arkit at the same time. Finally, I'm be able to build more functionality.
 
 #### 2. Difficult practical interaction structures: 
 Sort out the logical relationship between AR interactions and AR scenarios, and the hierarchy of different models.
