@@ -69,9 +69,9 @@ class ARViewWrapper: ObservableObject {
                     /// If they vary, may need to use Firestore to store rotation data.
                     let tempRotation = simd_quatf(angle: -1 * .pi / 2, axis: [0, 1, 0])
                     
-                    /// A quaternion representing the rotation around the X-axis to align the model with the real-world X-axis.
+                    /// A quaternion representing a rotation around the X-axis.
                     ///
-                    /// This is used to ensure that the model
+                    /// This is used to ensure that the model is aligned with the real-world X-axis
                     let xAxisAlignmentQuaternion = ARViewWrapper.calculateModelRotation(imageAnchor: imageAnchor)
                     
                     print("Detected image rotation matrix: \(imageAnchor.transform)")
