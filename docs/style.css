@@ -5,9 +5,6 @@ body {
   background: linear-gradient(to bottom right, #c3d9f5, #d1b9f2); /* Gradient background */
 }
 
-
-
-
 header {
   position: relative; /* Ensure the header is positioned relatively */
   z-index: 1; /* Ensure the header is above other content */
@@ -28,10 +25,8 @@ header::after {
   height: 10px; /* Adjust the height of the blurred border */
   background: inherit; /* Inherit background from the header */
   z-index: -1; /* Position the pseudo-element behind other content */
-  filter: blur(5px); /* Apply blur effect */
+  filter: blur(10px); /* Apply blur effect */
 }
-
-
 
 main {
   padding: 20px;
@@ -41,11 +36,6 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-}
-
-.left-column,
-.right-column {
-  flex: 1;
 }
 
 .item {
@@ -67,6 +57,7 @@ main {
 .qr-codes {
   display: flex;
   flex-direction: column;
+  margin-bottom: 170px;
 }
 
 .qr-codes button {
@@ -87,11 +78,10 @@ main {
   background: linear-gradient(to right, #3E82D7, #553B8E); /* Darker gradient background on hover */
 }
 
-
-
 .qr-codes img {
   display: none; /* Initially hide all QR codes */
   max-width: 150px;
+  margin-bottom: 170px;
 }
 
 .right-column {
