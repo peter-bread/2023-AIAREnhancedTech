@@ -11,6 +11,9 @@ When adding SwiftUI to an existing UIKit or AppKit project, I encounter challeng
 #### 1.Dynamic Previews Can Be Unreliable: 
 Consider the actual effect of the code before previewing, and restart Xcode or clean your build folder.
 
+#### 2. Integration with Existing Codebases:
+Start with small, incremental changes to manage risk and ensure smooth data and event integration between the frameworks using SwiftUI's data management tools and the Combine framework.
+
 ## AR Interactions
 
 ### Problems
