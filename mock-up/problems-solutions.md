@@ -1,5 +1,9 @@
 ## Frontend
+
 ### Problems
+#### 1. Dynamic Previews Can Be Unreliable:
+#### 2. Integration with Existing Codebases:
+
 ### Solution
 
 ## AR Interactions
