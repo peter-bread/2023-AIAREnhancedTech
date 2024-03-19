@@ -74,8 +74,13 @@ class ARViewWrapper: ObservableObject {
                     /// This is used to ensure that the model
                     let xAxisAlignmentQuaternion = ARViewWrapper.calculateModelRotation(imageAnchor: imageAnchor)
                     
+                    print("Detected image rotation matrix: \(imageAnchor.transform)")
+                    print("Calculated rotation quaternion: \(xAxisAlignmentQuaternion)")
+                    
                     // Apply the 2 rotations to the `Entity`
                     usdzEntity.transform.rotation = xAxisAlignmentQuaternion * tempRotation
+                    
+                    print("Entity rotation after applying quaternion: \(usdzEntity.transform.rotation)")
                     
                     // Add the `Entity` to the `AnchorEntity`
                     anchorEntity.addChild(usdzEntity)

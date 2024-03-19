@@ -54,7 +54,7 @@ struct QRCodeLoader {
 
             // Create an `ARReferenceImage` and set the name to the extracted data
             // Add the `ARReferenceImage` to the set of `ARReferenceImage`
-            let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.18) // TODO: change size or make it variable
+            let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.05) // TODO: change size or make it variable
             referenceImage.name = qrCodeData
             referenceImages.insert(referenceImage)
         
@@ -71,7 +71,7 @@ struct QRCodeLoader {
     ///
     /// - Parameter image: The `UIImage` to read the QR code from
     /// - Returns: The data encoded in the QR code as a `String`
-    func readQrCodeFromImage(from image: UIImage) -> String? {
+    private func readQrCodeFromImage(from image: UIImage) -> String? {
         let context = CIContext()
         let options = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
         let qrDetecter = CIDetector(ofType: CIDetectorTypeQRCode, context: context, options: options)
