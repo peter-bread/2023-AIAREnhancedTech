@@ -5,10 +5,14 @@ body {
 }
 
 header {
-  background-color: #f0f0f0;
+  background-image: linear-gradient(to right, #1400f5, #9f05f9); /* Gradient background */
+  color: #ffffff; /* Change text color to white */
   padding: 20px;
   text-align: center;
+  font-size: 24px; /* Increase font size for better readability */
+  font-weight: bold; /* Make the text bold */
 }
+
 
 main {
   padding: 20px;
@@ -31,11 +35,22 @@ main {
   align-items: center;
 }
 
+.diagram {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack images vertically */
+}
+
 .diagram img {
-  max-width: 150;
+  max-width: 300px;
+  margin-bottom: 40px; /* Add space between images */
+}
+
+.qr-codes {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack images vertically */
 }
 
 .qr-codes img {
-  margin: 10;
-  max-width: 150;
+  margin-bottom: 90px;
+  max-width: 150px;
 }
