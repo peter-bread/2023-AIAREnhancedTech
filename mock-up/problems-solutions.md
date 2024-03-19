@@ -2,6 +2,8 @@
 
 ### Problems
 #### 1. Dynamic Previews Can Be Unreliable:
+SwiftUI's live previews are a powerful feature for real-time UI design and development. However, they can sometimes be buggy or fail to refresh properly, requiring me to restart Xcode or clean your build folder.
+
 #### 2. Integration with Existing Codebases:
 
 ### Solution
