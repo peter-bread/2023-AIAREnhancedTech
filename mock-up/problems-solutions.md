@@ -28,6 +28,7 @@ Because the actual AR scene needs to contain many models as well as many complex
 According to the official apple documentation, try to incorporate multiple tricks of arkit at the same time.
 
 #### 2. Difficult practical interaction structures: 
+Sort out the logical relationship between AR interactions and AR scenarios, and the hierarchy of different models.
 
 
 ## Backend (Firebase)
