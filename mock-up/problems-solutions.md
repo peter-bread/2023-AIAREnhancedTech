@@ -5,7 +5,7 @@
 SwiftUI's live previews are a powerful feature for real-time UI design and development. However, they can sometimes be buggy or fail to refresh properly, requiring me to restart Xcode or clean your build folder.
 
 #### 2. Integration with Existing Codebases:
-When adding SwiftUI to an existing UIKit or AppKit project, I encounter challenges in integrating the two frameworks seamlessly, especially around data sharing and event handling.
+When adding SwiftUI to an existing UIKit or ARKit project, I encounter challenges in integrating the two frameworks seamlessly, especially around data sharing and event handling.
 
 ### Solution
 #### 1.Dynamic Previews Can Be Unreliable: 
