@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galasa QR code and Daigrams</title>
+  <title>Galasa QR code and Diagrams</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,29 +16,47 @@
       <div class="left-column">
         <div class="item">
           <div class="diagram">
-            <img src="run_remote.png" alt="Run Remote">
-            <img src="running_local.png" alt="Running Local">
-            <img src="hybridrunmode.png" alt="Hybrid Run Remote">
-            <img src="galasa-hybrid-cloud.png" alt="Galasa Hybrid Cloud">
-            <img src="ecosystem_components.png" alt="Ecosystem Components">
-            <img src="ecosystem_architecture.png" alt="Ecosystem Architecture">
+            <img src="diagrams/run_remote.png" alt="Run Remote">
+            <img src="diagrams/running_local.png" alt="Running Local">
+            <img src="diagrams/hybridrunmode.png" alt="Hybrid Run Remote">
+            <img src="diagrams/galasa-hybrid-cloud.png" alt="Galasa Hybrid Cloud">
+            <img src="diagrams/ecosystem_components.png" alt="Ecosystem Components">
+            <img src="diagrams/ecosystem_architecture.png" alt="Ecosystem Architecture">
           </div>
         </div>
       </div>
       <div class="right-column">
         <div class="item">
           <div class="qr-codes">
-            <img src="placeholder" alt="QR Code 1">
-            <img src="placeholder" alt="QR Code 2">
-            <img src="placeholder" alt="QR Code 3">
-            <img src="placeholder" alt="QR Code 4">
-            <img src="placeholder" alt="QR Code 5">
-            <img src="placeholder" alt="QR Code 6">
+            <div class="qr-code">
+              <button onclick="revealQRCode('run_test_in_ecosystem')">Reveal QR Code Remote Ecosystem</button>
+              <img src="qr-codes/run_test_in_ecosystem.png" alt="Run Remote">
+            </div>
+            <div class="qr-code">
+              <button onclick="revealQRCode('run_test_locally')">Reveal QR Code Running Local</button>
+              <img src="qr-codes/run_test_locally.png" alt="Running Local">
+            </div>
+            <div class="qr-code">
+              <button onclick="revealQRCode('run_test_shared_config')">Reveal QR Code Hybrid Run Remote</button>
+              <img src="qr-codes/run_test_shared_config.png" alt="Hybrid Run Remote">
+            </div>
+            <div class="qr-code">
+              <button onclick="revealQRCode('hybrid_cloud_environment')">Reveal QR Code Galasa Hybrid Cloud</button>
+              <img src="qr-codes/hybrid_cloud_environment.png" alt="Galasa Hybrid Cloud">
+            </div>
+            <div class="qr-code">
+              <button onclick="revealQRCode('ecosystem_components')">Reveal QR Code Ecosystem Components</button>
+              <img src="qr-codes/ecosystem_components.png" alt="Ecosystem Components">
+            </div>
+            <div class="qr-code">
+              <button onclick="revealQRCode('ecosystem_architecture')">Reveal QR Code Ecosystem Architecture</button>
+              <img src="qr-codes/ecosystem_architecture.png" alt="Ecosystem Architecture">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
-
 </html>

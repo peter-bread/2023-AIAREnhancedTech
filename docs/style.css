@@ -2,12 +2,30 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom right, #c3d9f5, #d1b9f2); /* Gradient background */
 }
 
 header {
-  background-color: #f0f0f0;
+  position: relative; /* Ensure the header is positioned relatively */
+  z-index: 1; /* Ensure the header is above other content */
+  background-image: linear-gradient(to right, #1400f5, #9f05f9); /* Gradient background */
+  color: #ffffff; /* White text color */
   padding: 20px;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Position the pseudo-element below the header */
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the blurred border */
+  background: inherit; /* Inherit background from the header */
+  z-index: -1; /* Position the pseudo-element behind other content */
+  filter: blur(10px); /* Apply blur effect */
 }
 
 main {
@@ -20,22 +38,58 @@ main {
   align-items: flex-start;
 }
 
-.left-column,
-.right-column {
-  flex: 1;
-}
-
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.diagram {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack images vertically */
+}
+
 .diagram img {
-  max-width: 150;
+  max-width: 300px;
+  margin-bottom: 40px; /* Add space between images */
+}
+
+.qr-codes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 170px;
+}
+
+.qr-codes button {
+  margin-bottom: 170px; /* Adjust margin as needed */
+  padding: 15px 30px; /* Increase padding to increase button size */
+  background: linear-gradient(to right, #4A90E2, #6441A5); /* Gradient background */
+  border: 3px solid black; /* Add black border */
+  color: white; /* White text color */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.qr-codes button:hover {
+  background: linear-gradient(to right, #3E82D7, #553B8E); /* Darker gradient background on hover */
 }
 
 .qr-codes img {
-  margin: 10;
-  max-width: 150;
+  display: none; /* Initially hide all QR codes */
+  max-width: 150px;
+  margin-bottom: 170px;
+}
+
+.right-column {
+  flex: 1;
+  margin-top: 100px; /* Add margin at the top */
+}
+
+.left-column {
+  flex: 1;
+  margin-top: 30px; /* Add margin at the top */
 }
