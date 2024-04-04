@@ -73,9 +73,7 @@ By tailoring your product to meet the needs of these three personas, we can ensu
   
 - **IBM's AI Watson Speech to Text, Text to Speech**  -  IBM's Watson is an artificial intelligence system developed by IBM. Watson is powered by advanced machine learning and natural language processing algorithms. Watson Speech to Text and Text to Speech are services within IBM's Watson AI platform. We will look to harness Watson’s Text to Speech service to transform written text into lifelike speech, facilitating the application's interactive voice response systems.
 
-## User Instructions
-
-### Developer Instructions
+## Developer Instructions
   
 - Contact bn22907@bristol.ac.uk if you wish to develop so that you can be added to the XCode developer team
 
@@ -90,6 +88,14 @@ By tailoring your product to meet the needs of these three personas, we can ensu
 
 - Select a device on the simulator or plug in your physical device
 - Click the play button in the top left
+
+## User Instructions
+
+- Contact bn22907@bristol.ac.uk to receive a TestFlight invitation
+- Download TestFlight from the AppStore 
+- Once you have TestFlight installed, simply download the latest version of our application from TestFlight. This process is similar to downloading any other app from the App Store.
+- After following these steps, the user is able to explore and interact with the latest deployed version of the application.
+
 
 ## Project Management Tools
 
