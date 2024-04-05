@@ -125,3 +125,17 @@ One of the key features we're excited to introduce in our beta release is the in
 
 - Watson will be programmed to understand natural language queries from users, allowing them to ask questions or seek clarification on specific elements within the diagrams.
 - Integrating Watson seamlessly into the application presents challenges. We must ensure that Watson's responses are accurate and relevant. Additionally, aligning Watson's virtual presence within the augmented reality environment in a way that enhances user interaction without obstructing the view of the diagrams is crucial for a smooth and immersive experience.
+
+
+### Enhanced User Interface
+
+- In our beta release, we're focusing on refining the user interface to ensure a more intuitive and seamless interaction.
+- During the development process, we've gathering feedback from users to understand their needs and preferences. Incorporating this feedback into our beta release allows us to address any usability issues, refine features, and enhance the overall user experience.
+
+### Expanded Diagram Library
+
+Building upon the success of our initial diagrams, we're expanding our diagram library to include a wider range of documentation. This ensures that users have access to a diverse set of diagrams, catering to different learning objectives and interests. From simple concepts to more advanced topics, our goal is to provide comprehensive coverage that meets the needs of our diverse user base.
+
+### Performance Optimization and Bug Fixes
+
+In the beta release, we're prioritizing performance optimization and bug fixes to deliver a more reliable experience. We encountered an issue where the diagrams would sometimes spawn in pink; we are curretnly wokring to adress this issue.
