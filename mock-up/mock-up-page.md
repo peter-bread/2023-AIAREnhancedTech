@@ -139,3 +139,7 @@ Building upon the success of our initial diagrams, we're expanding our diagram l
 ### Performance Optimization and Bug Fixes
 
 In the beta release, we're prioritizing performance optimization and bug fixes to deliver a more reliable experience. We encountered an issue where the diagrams would sometimes spawn in pink; we are curretnly wokring to adress this issue.
+
+### Conclusion
+
+Our beta release represents a significant milestone in the development of our augmented reality application. By integrating an AI assistant, enhancing the user interface, expanding our diagram library, and prioritizing performance optimization, we are on our way to delivering an immersive and educational experience. We want to continue refining and improving our application based on user feedback and feedback from our Beta Release presentation.
