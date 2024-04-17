@@ -97,7 +97,7 @@ By tailoring your product to meet the needs of these three personas, we can ensu
 - After following these steps, the user is able to explore and interact with the latest deployed version of the application.
 - Within the Galasa application, select the Instructions button to see further details about how to interact with the application.
 - Select the link in our 'about' to be taken to our Github pages. This page displays all the diagrams you can interact with in the application.
-- Choose a diagram you would like to learn more about and then click it's corresponding button to make its unique QR code visible.
+- Choose a diagram you would like to learn more about and then click its corresponding button to make its unique QR code visible.
 
 
 ## Project Management Tools
