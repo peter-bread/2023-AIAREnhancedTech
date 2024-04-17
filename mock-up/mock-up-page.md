@@ -138,7 +138,7 @@ Building upon the success of our initial diagrams, we're expanding our diagram l
 
 ### Performance Optimization and Bug Fixes
 
-In the beta release, we're prioritizing performance optimization and bug fixes to deliver a more reliable experience. We encountered an issue where the diagrams would sometimes spawn in pink; we are curretnly wokring to adress this issue.
+In the beta release, we're prioritizing performance optimization and bug fixes to deliver a more reliable experience. We encountered an issue where the diagrams would sometimes spawn in pink; we are currently working to address this issue.
 
 ### Conclusion
 
