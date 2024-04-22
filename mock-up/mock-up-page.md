@@ -121,6 +121,7 @@ For our beta release, we're excited to take our application to the next level by
 
 One of the key features we're excited to introduce in our beta release is the integration of Watson, our AI assistant, designed to enhance the user experience and aid in understanding the documentation. Watson will serve as a knowledgeable companion, ready to provide assistance and answer questions related to the diagrams and documentation within the application.
 
+
 #### Watson
 
 - Watson will be programmed to understand natural language queries from users, allowing them to ask questions or seek clarification on specific elements within the diagrams.
@@ -130,7 +131,7 @@ One of the key features we're excited to introduce in our beta release is the in
 ### Enhanced User Interface
 
 - In our beta release, we're focusing on refining the user interface to ensure a more intuitive and seamless interaction.
-- During the development process, we've gathering feedback from users to understand their needs and preferences. Incorporating this feedback into our beta release allows us to address any usability issues, refine features, and enhance the overall user experience.
+- During the development process, we've been gathering feedback from users to understand their needs and preferences. Incorporating this feedback into our beta release allows us to address any usability issues, refine features, and enhance the overall user experience.
 
 ### Expanded Diagram Library
 
