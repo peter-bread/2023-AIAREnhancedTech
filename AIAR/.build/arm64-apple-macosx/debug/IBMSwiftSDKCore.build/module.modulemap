@@ -1,4 +1,0 @@
-module IBMSwiftSDKCore {
-    header "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/IBMSwiftSDKCore-Swift.h"
-    requires objc
-}
