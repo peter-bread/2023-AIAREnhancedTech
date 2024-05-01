@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "317BDB18-7B0A-408F-9E51-6B720CE4EA05",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:AIAR.xcodeproj",
+      "identifier" : "A76876E62B6ADB8F00F95E44",
+      "name" : "AIAR"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:AIAR.xcodeproj",
+        "identifier" : "04706EB22BE2581700799289",
+        "name" : "AIARUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -2,7 +2,7 @@
 //  AIARUITests.swift
 //  AIARUITests
 //
-//  Created by 陈若鑫 on 31/01/2024.
+//  Created by Louie Sinadjan on 01/05/2024.
 //
 
 import XCTest
@@ -10,33 +10,32 @@ import XCTest
 final class AIARUITests: XCTestCase {
 
     override func setUpWithError() throws {
-            continueAfterFailure = false
-        }
+        // Put setup code here. This method is called before the invocation of each test method in the class.
 
-        override func tearDownWithError() throws {
-            // Put teardown code here. This method is called after the invocation of each test method in the class.
-        }
+        // In UI tests it is usually best to stop immediately when a failure occurs.
+        continueAfterFailure = false
 
-        func testLandingPageUI() throws {
-            let app = XCUIApplication()
-            app.launch()
+        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    }
 
-            // Example: Test the existence of a button with accessibility identifier "Go to New Page"
-            XCTAssertTrue(app.buttons["Go to New Page"].exists)
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
 
-            // Add more UI test steps based on your landing page interactions
+    func testExample() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
 
-            // For example, tapping the button to navigate to the next page
-            app.buttons["Go to New Page"].tap()
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
 
-            // You can add more assertions or interactions with elements on the new page if needed
-        }
-
-        func testLaunchPerformance() throws {
-            if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-                measure(metrics: [XCTApplicationLaunchMetric()]) {
-                    XCUIApplication().launch()
-                }
+    func testLaunchPerformance() throws {
+        if #available(macOS 10.15, iOS 17.0, tvOS 13.0, watchOS 7.0, *) {
+            // This measures how long it takes to launch your application.
+            measure(metrics: [XCTApplicationLaunchMetric()]) {
+                XCUIApplication().launch()
             }
         }
+    }
 }
