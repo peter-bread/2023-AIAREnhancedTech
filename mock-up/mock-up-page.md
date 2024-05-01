@@ -116,3 +116,31 @@ Our MVP demonstrates we can spawn in Galasa diagrams when prompted by the docume
 ### Our Beta Release
 
 For our beta release, we're excited to take our application to the next level by integrating all the individual components of our technology stack into a cohesive and robust experience. This includes expanding our use of QR codes to integrate more diagrams into the augmented reality environment and enhancing the user interface for a smoother and more intuitive interaction.
+
+### Integrating an AI Assistant
+
+One of the key features we're excited to introduce in our beta release is the integration of Watson, our AI assistant, designed to enhance the user experience and aid in understanding the documentation. Watson will serve as a knowledgeable companion, ready to provide assistance and answer questions related to the diagrams and documentation within the application.
+
+
+#### Watson
+
+- Watson will be programmed to understand natural language queries from users, allowing them to ask questions or seek clarification on specific elements within the diagrams.
+- Integrating Watson seamlessly into the application presents challenges. We must ensure that Watson's responses are accurate and relevant. Additionally, aligning Watson's virtual presence within the augmented reality environment in a way that enhances user interaction without obstructing the view of the diagrams is crucial for a smooth and immersive experience.
+
+
+### Enhanced User Interface
+
+- In our beta release, we're focusing on refining the user interface to ensure a more intuitive and seamless interaction.
+- During the development process, we've been gathering feedback from users to understand their needs and preferences. Incorporating this feedback into our beta release allows us to address any usability issues, refine features, and enhance the overall user experience.
+
+### Expanded Diagram Library
+
+Building upon the success of our initial diagrams, we're expanding our diagram library to include a wider range of documentation. This ensures that users have access to a diverse set of diagrams, catering to different learning objectives and interests. From simple concepts to more advanced topics, our goal is to provide comprehensive coverage that meets the needs of our diverse user base.
+
+### Performance Optimization and Bug Fixes
+
+In the beta release, we're prioritizing performance optimization and bug fixes to deliver a more reliable experience. We encountered an issue where the diagrams would sometimes spawn in pink; we are currently working to address this issue.
+
+### Conclusion
+
+Our beta release represents a significant milestone in the development of our augmented reality application. By integrating an AI assistant, enhancing the user interface, expanding our diagram library, and prioritizing performance optimization, we are on our way to delivering an immersive and educational experience. We want to continue refining and improving our application based on user feedback and feedback from our Beta Release presentation.
