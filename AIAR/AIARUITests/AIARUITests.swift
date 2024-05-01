@@ -21,15 +21,10 @@ final class AIARUITests: XCTestCase {
             let app = XCUIApplication()
             app.launch()
 
-            // Example: Test the existence of a button with accessibility identifier "Go to New Page"
-            XCTAssertTrue(app.buttons["Go to New Page"].exists)
+            // Test the existence of a button with accessibility identifier "Instructions"
+            XCTAssertTrue(app.buttons["Instructions"].exists)
 
-            // Add more UI test steps based on your landing page interactions
-
-            // For example, tapping the button to navigate to the next page
-            app.buttons["Go to New Page"].tap()
-
-            // You can add more assertions or interactions with elements on the new page if needed
+            app.buttons["Instructions"].tap()
         }
 
         func testLaunchPerformance() throws {

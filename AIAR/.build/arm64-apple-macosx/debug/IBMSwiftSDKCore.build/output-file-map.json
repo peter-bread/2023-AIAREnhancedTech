@@ -1,0 +1,83 @@
+{
+  "": {
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/master.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/Authentication.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/Authentication.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/Authentication.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/Authentication~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/Authentication.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/CloudPakForDataAuthenticator.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CloudPakForDataAuthenticator.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CloudPakForDataAuthenticator.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CloudPakForDataAuthenticator~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CloudPakForDataAuthenticator.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/ConfigBasedAuthenticatorFactory.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/ConfigBasedAuthenticatorFactory.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/ConfigBasedAuthenticatorFactory.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/ConfigBasedAuthenticatorFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/ConfigBasedAuthenticatorFactory.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/IAMAuthenticator.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/IAMAuthenticator.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/IAMAuthenticator.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/IAMAuthenticator~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/IAMAuthenticator.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/InsecureConnection.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/InsecureConnection.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/InsecureConnection.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/InsecureConnection~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/InsecureConnection.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/Authentication/JWT.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JWT.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JWT.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JWT~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JWT.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/CodableExtensions.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CodableExtensions.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CodableExtensions.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CodableExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CodableExtensions.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/CredentialUtils.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CredentialUtils.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CredentialUtils.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CredentialUtils~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/CredentialUtils.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/JSON.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JSON.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JSON.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JSON~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/JSON.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/MultipartFormData.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/MultipartFormData.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/MultipartFormData.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/MultipartFormData~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/MultipartFormData.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/RestError.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestError.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestError.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestError~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestError.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/RestRequest.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestRequest.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestRequest.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestRequest.swiftdeps"
+  },
+  "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/checkouts/swift-sdk-core/Sources/IBMSwiftSDKCore/RestResponse.swift": {
+    "dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestResponse.d",
+    "object": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestResponse.swift.o",
+    "swiftmodule": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestResponse~partial.swiftmodule",
+    "swift-dependencies": "/Users/louiesinadjan/Desktop/SEP-Galasa/2023-AIAREnhancedTech/AIAR/.build/arm64-apple-macosx/debug/IBMSwiftSDKCore.build/RestResponse.swiftdeps"
+  }
+}

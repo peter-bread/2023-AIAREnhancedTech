@@ -168,8 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				A76876E92B6ADB8F00F95E44 /* AIAR */,
-				A76876FA2B6ADB9000F95E44 /* AIARTests */,
-				A76877042B6ADB9000F95E44 /* AIARUITests */,
 				A76876E82B6ADB8F00F95E44 /* Products */,
 				7741CD792BA2734B0031BAF9 /* Frameworks */,
 			);
@@ -207,20 +205,6 @@
 				A76876F12B6ADB9000F95E44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A76876FA2B6ADB9000F95E44 /* AIARTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIARTests;
-			sourceTree = "<group>";
-		};
-		A76877042B6ADB9000F95E44 /* AIARUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIARUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
